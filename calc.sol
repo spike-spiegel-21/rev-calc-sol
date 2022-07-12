@@ -5,8 +5,16 @@ contract Math {
     //storing in int for negative operations
     
     //division
+    function division(int256 a, int256 b) public payable returns (int256) {
+        store = a/b;
+        return store;
+    }
 
     //multiply
+    function multiply(int256 a, int256 b) public payable returns (int256) {
+        store = a*b;
+        return store;
+    }
     
     
     //subtraction
