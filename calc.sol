@@ -10,8 +10,17 @@ contract Math {
     
     
     //subtraction
-    
+    function subtract(int256 a, int256 b) public payable returns (int256){
+        if(a>b) store = a-b;
+        else store = b-a;
+
+        return store;
+    }
     
     //addition
+    function add(int256 a, int256 b) public payable returns (int256) {
+        store = a+b;
+        return store;
+    }
     
 }
